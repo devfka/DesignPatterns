@@ -1,4 +1,4 @@
-package builderpattern;
+package creational.builder;
 
 import java.util.HashSet;
 import java.util.Set;

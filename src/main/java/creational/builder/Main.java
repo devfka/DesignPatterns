@@ -1,4 +1,6 @@
-package builderpattern;
+package creational.builder;
+
+import creational.builder.Email;
 
 public class Main {
 
