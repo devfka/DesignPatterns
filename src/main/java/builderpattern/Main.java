@@ -8,5 +8,7 @@ public class Main {
                 .setMainText("This is main text")
                 .setTitle("About Test").build();
 
+        System.out.println(email);
+
     }
 }
