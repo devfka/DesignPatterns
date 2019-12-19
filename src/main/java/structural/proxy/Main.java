@@ -9,5 +9,6 @@ public class Main
 
         CustomerService customerService2 = new CustomerServiceProxy(false);
         customerService2.getCustomers();
+
     }
 }
