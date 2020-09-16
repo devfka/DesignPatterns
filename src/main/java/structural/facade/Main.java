@@ -5,6 +5,9 @@ public class Main
 
     public static void main(String[] args)
     {
-        GenericHelper.generateReport("Oracle", "");
+        GenericHelper genericHelper = new GenericHelper();
+
+        genericHelper.generateOracleReport("xxxxx");
+        genericHelper.generateMySqlReport("xxxx");
     }
 }

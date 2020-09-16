@@ -2,18 +2,19 @@ package structural.facade;
 
 public class GenericHelper
 {
-    public static void generateReport(String dbType, String tableName)
+
+    private MySqlHelper mySqlHelper = new MySqlHelper();
+    private OracleHelper oracleHelper = new OracleHelper();
+
+
+    void generateOracleReport(String tableName)
     {
-        if (dbType.equals("MySql"))
-        {
-            MySqlHelper mySqlHelper = new MySqlHelper();
-            mySqlHelper.generateMySqlHTMLReport(tableName);
-        }
-        else if (dbType.equals("Oracle"))
-        {
-            OracleHelper oracleHelper = new OracleHelper();
-            oracleHelper.generateOracleHTMLReport(tableName);
-        }
+        oracleHelper.generateOracleHTMLReport(tableName);
+    }
+
+    void generateMySqlReport(String tableName)
+    {
+        mySqlHelper.generateMySqlHTMLReport(tableName);
+    }
 
     }
-}

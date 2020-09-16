@@ -8,7 +8,7 @@ public class VehicleFactory
         new HashMap<String, Vehicle>();
 
 
-    public static Vehicle getPlayer(String type)
+    public static Vehicle getVehicle(String type)
     {
         Vehicle h = null;
 
